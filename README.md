@@ -6,10 +6,10 @@
 
 [中文说明](README.zh-CN.md)
 
-An Android indoor positioning and navigation prototype for a mapped
-multi-building environment. It combines Wi-Fi fingerprint matching for room-
-level positioning with pedestrian dead reckoning (PDR), graph-based routing,
-floor switching, and route snapping.
+An Android indoor positioning and navigation prototype with route planning and
+real-time tracking for a mapped multi-building environment. It combines Wi-Fi
+fingerprint matching for room-level positioning with pedestrian dead reckoning
+(PDR), graph-based routing, floor switching, and route snapping.
 
 ## Core functions
 
@@ -29,6 +29,11 @@ floor switching, and route snapping.
 The bundled maps, graph coordinates, and fingerprint database are calibrated
 for one physical deployment. They demonstrate the complete pipeline but are
 not a general indoor-positioning benchmark.
+
+In the course project, Wi-Fi correction and update logic that rejected
+unreliable readings reduced the reported mean localization error from
+approximately 2.4 m to 1.5 m. See the [project record](docs/PROJECT_RECORD.md)
+for the tracking context and evidence scope.
 
 ## Build and run
 
